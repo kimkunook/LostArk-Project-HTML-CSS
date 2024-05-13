@@ -1,0 +1,97 @@
+main {
+    min-width : 1232px;
+    min-height : 900px;
+    display : flex;
+    flex-direction : column;
+    padding : 80px 335.5px;
+    box-sizing : border-box;
+    gap : 80px;
+}
+p {
+    font-size : 24px;
+    font-weight : bold;
+    letter-spacing : -0.5px;
+}
+main a {
+    display : inline-block;
+    color : white;
+    text-decoration : none;
+}
+.bundle {
+    width : 100%;
+    display : flex;
+    flex-direction : column;
+    gap : 24px;
+}
+.bundle_icon {
+    display : flex;
+    gap : 16px;
+}
+.icon {
+    width : 192px;
+    height : 192px;
+    border-radius : 8px;
+    padding : 8px;
+    box-sizing : border-box;
+    display : flex;
+    flex-shrink: 0;
+}
+.name {
+    color : #FFFFFF;
+    font-size : 18px;
+    font-weight : bold;
+    letter-spacing : -0.5px;
+    text-shadow : -1px 0px #000000, 0px -1px #000000, 1px 0px #000000, 0px 1px #000000;
+    align-self : flex-end;
+}
+#argos {
+    background-image : url(./image/argos.png);
+    background-size : cover;
+}
+#valtan {
+    background-image : url(./image/valtan.png);
+    background-size : cover;
+}
+#vykas {
+    background-image : url(./image/vykas.png);
+    background-size : cover;
+}
+#koukusaton {
+    background-image : url(./image/koukusaton.png);
+    background-size : cover;
+}
+#abrelshud {
+    background-image : url(./image/abrelshud.jpg);
+    background-size : cover;
+    background-position-x : -60px;
+}
+#illiakan {
+    background-image : url(./image/illiakan.jpg);
+    background-size : cover;
+    background-position-x : -100px;
+}
+#kamen {
+    background-image : url(./image/kamen.jpg);
+    background-size : cover;
+    background-position-x : -80px;
+}
+#lauriel {
+    background-image : url(./image/lauriel.jpg);
+    background-size : cover;
+    background-position-x : -70px;
+}
+#lazalam {
+    background-image : url(./image/lazalam.jpg);
+    background-size : cover;
+    background-position-x : -40px;
+}
+#echidna {
+    background-image : url(./image/echidna.jpg);
+    background-size : cover;
+    background-position-x : -80px;
+}
+#behemoth {
+    background-image : url(./image/behemoth.jpg);
+    background-size : cover;
+    background-position-x : -60px;
+}

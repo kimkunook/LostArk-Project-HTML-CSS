@@ -1,0 +1,159 @@
+/* 게시판 목차 CSS 시작 */
+/* 게시판 종류에 따라 이미지, 크기, 위치만 교체 */
+main {
+    width : 1920px;
+    min-height : 900px;
+    display : flex;
+    flex-direction : row;
+}
+aside {
+    position : relative;
+    left : 0px;
+    background-image : url(./image/behemoth.jpg);
+    background-size : cover;
+    background-position-x : -620px;
+    width : 304px;
+    min-height : 900px;
+    max-height : 100%;
+    padding : 16px;
+    box-sizing : border-box;
+    font-weight : bold;
+    color : #FFFFFF;
+    text-shadow : -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black;
+    display : flex;
+    align-items : center;
+    flex-shrink: 0;
+}
+aside > div { margin-left : 48px;}
+aside ul {
+    font-size : 18px;
+    margin : 24px;
+}
+aside li {
+    margin : 16px;
+}
+aside a { color : white; text-decoration : none;}
+/* 게시판 목차 CSS 종료 */
+/* 게시글 리스트 표 CSS 시작 */
+#container {
+    width : 1616px;
+    min-height : 900px;
+    background-color : #E0E7E9;
+    padding : 64px 80px;
+    box-sizing : border-box;
+    position : relative;
+    display : flex;
+    flex-direction : column;
+}
+#container > p {
+    font-size : 32px;
+    letter-spacing : -0.5px;
+    font-weight : bold;
+}
+#container > a {
+    color : #000000;
+    text-decoration : none;
+}
+#write {
+    width : 64px;
+    height : 32px;
+    border : 1px solid #6C7A89;
+    border-radius : 8px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    font-weight : bold;
+    letter-spacing : -0.5px;
+    position : absolute;
+    top : 88px;
+    left : 1088px;
+}
+#box {
+    width : 1072px;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+}
+table {
+    margin-top : 40px;
+}
+table a {
+    color : #000000;
+    text-decoration : none;
+}
+tr {
+    display : flex;
+    flex-direction : row;
+}
+th {
+    background-color : #646464;
+    color : #FFFFFF;
+    font-size : 20px;
+    letter-spacing : -0.5px;
+    font-weight : bold;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    border-right : 1px solid #000000;
+}
+th:last-of-type {
+    border : 0px;
+}
+.gate {
+    width : 80px;
+    height : 48px;
+}
+.title {
+    width : 480px;
+    height : 48px;
+}
+.writer {
+    width : 144px;
+    height : 48px;
+}
+.view {
+    width : 104px;
+    height : 48px;
+}
+.date {
+    width : 144px;
+    height : 48px;
+}
+.comment {
+    width : 120px;
+    height : 48px
+}
+td {
+    box-sizing : border-box;
+    letter-spacing : -0.5px;
+    border-bottom : 1px solid #6C7A89;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+tbody > tr > .title {
+    padding-left : 20px;
+    font-weight : bold;
+    justify-content : flex-start;
+}
+#listnum {
+    margin : 40px auto 0px auto;
+    display : flex;
+    gap : 8px;
+}
+#listnum > div {
+    width : 40px;
+    height : 40px;
+    font-size : 14px;
+    font-weight : bold;
+    border : 1px solid #6C7A89;
+    border-radius : 8px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+#listnum > :nth-child(3) {
+    background-color : #354649;
+    color : #FFFFFF;
+}
+/* 게시글 리스트 표 CSS 종료 */

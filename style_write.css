@@ -1,0 +1,104 @@
+/* 게시판 목차 CSS 시작 */
+/* 게시판 종류에 따라 이미지, 크기, 위치만 교체 */
+main {
+    width : 1920px;
+    min-height : 900px;
+    display : flex;
+    flex-direction : row;
+}
+aside {
+    position : relative;
+    left : 0px;
+    background-color : #2B212B;
+    /* <select> 선택에 따라 알맞는 보스의 img가 background-image로 출력되게 설정 변경 */
+    background-size : cover;
+    background-position-x : -310px;
+    width : 304px;
+    min-height : 900px;
+    max-height : 100%;
+    padding : 16px;
+    box-sizing : border-box;
+    font-weight : bold;
+    color : #FFFFFF;
+    text-shadow : -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black;
+    display : flex;
+    align-items : center;
+    flex-shrink: 0;
+}
+aside > div { margin-left : 48px;}
+aside ul {
+    font-size : 18px;
+    margin : 24px;
+}
+aside li {
+    margin : 16px;
+}
+aside a { color : white; text-decoration : none;}
+/* 게시판 목차 CSS 종료 */
+/* 글 작성 공간 CSS 시작 */
+#container {
+    width : 1616px;
+    min-height : 900px;
+    background-color : #E0E7E9;
+    padding : 64px;
+    box-sizing : border-box;
+}
+#writebox {
+    width : 1072px;
+    height : 722px;
+    padding : 16px;
+    gap : 16px;
+    box-sizing : border-box;
+    display : flex;
+    flex-direction : column;
+}
+#titletype {
+    display : flex;
+    justify-content : space-between;
+}
+#titletype > :first-child {
+    font-size : 32px;
+    letter-spacing : -0.5px;
+    font-weight : bold;
+}
+#titletype > :last-child {
+    background-color : #E0E7E9;
+}
+#text_title {
+    width : 1040px;
+    height : 48px;
+    background-color : #E0E7E9;
+    border : 1px solid #6C7A89;
+    border-radius : 8px;
+    padding : 9px 16px;
+    box-sizing : border-box;
+    font-size : 18px;
+    font-weight : bold;
+    letter-spacing : -0.5px;
+}
+/* Quill Editor CSS 속성 편집 시작 */
+#editor {
+    width : 1040px;
+    height : 441px;
+    padding : 12px 15px;
+    box-sizing : border-box;
+    border : 0px 1px 1px 1px solid #6C7A89;
+}
+/* Quill Editor CSS 속성 편집 종료 */
+#buttonbox {
+    margin-top : 24px;
+    display : flex;
+    gap : 16px;
+    align-self : flex-end;
+}
+#buttonbox > div {
+    width : 96px;
+    height : 48px;
+    border : 1px solid #6C7A89;
+    border-radius : 4px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    letter-spacing : -0.5px;
+    font-weight : bold;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style_base.css">
+    <link rel="stylesheet" href="./style_argos_search.css">
+    <!-- 조회하려는 글의 제목으로 적용 -->
+    <title>아르고스 게시판 공지글입니다.</title>
+</head>
+
+<body>
+    <header>
+        <div><a href="./index.html">로스트아크 공략 & 팁 게시판</a></div>
+        <div>
+            <div><a href="./login.html">로그인</a></div>
+            <div><a href="./signin.html">회원가입</a></div>
+        </div>
+    </header>
+    <main>
+        <!-- 게시판 목차 HTML 시작 -->
+        <!-- 반드시 <main> 하위 태그로 <aside> 사용 -->
+        <aside>
+            <div>
+                <ul>어비스 레이드
+                    <li><a href="./argos.html">아르고스</a></li>
+                </ul>
+                <ul>군단장 레이드
+                    <li><a href="./valtan.html">발탄</a></li>
+                    <li><a href="./vykas.html">비아키스</a></li>
+                    <li><a href="./koukusaton.html">쿠크세이튼</a></li>
+                    <li><a href="./abrelshud.html">아브렐슈드</a></li>
+                    <li><a href="./illiakan.html">일리아칸</a></li>
+                    <li><a href="./kamen.html">카멘</a></li>
+                </ul>
+                <ul>어비스 던전
+                    <li><a href="./lauriel.html">카양겔</a></li>
+                    <li><a href="./lazalam.html">상아탑</a></li>
+                </ul>
+                <ul>카제로스 레이드
+                    <li><a href="./echidna.html">에키드나</a></li>
+                    <li><a href="./behemoth.html">베히모스</a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- 게시판 목차 HTML 종료 -->
+        <div id="container">
+            <div id="contentbox">
+                <div id="topline">
+                    <div>아르고스 게시판</div>
+                    <div>
+                        <a href="./fix.html">
+                            <div>글 수정</div>
+                        </a>
+                        <!-- 누르면 해당 글 삭제하는 기능 추가 -->
+                        <div>글 삭제</div>
+                    </div>
+                </div>
+                <div id="title">아르고스 게시판 공지글입니다.</div>
+                <!-- 조회하려는 글의 내용으로 적용, 예시 시작 -->
+                <div id="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+                    a galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                    more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dolor dignissimos non,
+                    perferendis vero doloremque rem iure atque ipsum minus similique nulla inventore amet nemo! Ipsa
+                    architecto perferendis ea quo!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit a aut maiores consectetur id eaque
+                    alias in deserunt veritatis asperiores placeat officia, ad dolor quisquam! Sapiente ab dolorem animi
+                    exercitationem.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo at facilis laborum sint, eveniet et
+                    repudiandae vel voluptatibus, suscipit maiores doloribus a. In quis vitae iure et reprehenderit
+                    magni obcaecati!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae consequuntur ab minus dicta,
+                    repudiandae, sunt suscipit explicabo molestiae magni, qui possimus ratione nobis consequatur unde
+                    blanditiis eveniet nesciunt. Eum, quos.</div>
+                <!-- 조회하려는 글의 내용으로 적용, 예시 종료 -->
+                <input type="text" id="comment" placeholder="댓글 입력란입니다.">
+                <div id="commentlist">
+                    <!-- 조회된 댓글의 총 갯수를 합산해서 출력 -->
+                    <div style="font-size:18px;position:relative;left:-16px;">댓글 : 120개</div>
+                    <div>김씨 : 감사합니다.</div>
+                    <div>이씨 : 감사합니다.</div>
+                    <div>박씨 : 감사합니다.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="./image/lostark.webp">
+        <div>Made by KKO</div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+header {
+    width : 1920px;
+    height : 120px;
+    background-image : url(./image/headerimg.jpg);
+    background-size : 1920px 1080px;
+    background-position : 0px -200px;
+    padding : 40px;
+    box-sizing : border-box;
+    display : flex;
+    align-items : center;
+}
+header > :first-child {
+    color : #FFFFFF;
+    font-size : 24px;
+    letter-spacing : -0.5px;
+    font-weight : bold;
+    margin-left : 344px;
+}
+header > :last-child {
+    display : flex;
+    gap : 40px;
+    margin : auto 40px auto auto;
+}
+header > div > div {
+    width : 80px;
+    height : 40px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    border : 1px solid #FFFFFF;
+    border-radius : 4px;
+    color : #FFFFFF;
+    font-weight : bold;
+    letter-spacing : -0.5px;
+}
+footer {
+    width : 1920px;
+    height : 60px;
+    background-color : #252525;
+    display : flex;
+    position : relative;
+    justify-content: center;
+}
+footer > img {
+    width : 160px;
+    height : 40px;
+    position : absolute;
+    align-self : center;
+}
+footer > div {
+    color : #FFFFFF;
+    font-weight : bold;
+    letter-spacing : -0.5px;
+    margin : auto 718px auto auto;
+    position : relative;
+}
+header a {
+    color : #FFFFFF;
+    text-decoration : none;
+}

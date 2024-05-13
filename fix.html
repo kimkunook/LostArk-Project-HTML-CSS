@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style_base.css">
+    <link rel="stylesheet" href="./style_fix.css">
+    <!-- Quill Editor 요소 시작 -->
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.1/dist/quill.snow.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.1/dist/quill.js"></script>
+    <!-- Quill Editor 요소 종료 -->
+    <title>게시판 글 수정</title>
+</head>
+
+<body>
+    <header>
+        <div><a href="./index.html">로스트아크 공략 & 팁 게시판</a></div>
+        <div>
+            <div><a href="./login.html">로그인</a></div>
+            <div><a href="./signin.html">회원가입</a></div>
+        </div>
+    </header>
+    <main>
+        <!-- 게시판 목차 HTML 시작 -->
+        <!-- 반드시 <main> 하위 태그로 <aside> 사용 -->
+        <aside>
+            <div>
+                <ul>어비스 레이드
+                    <li><a href="./argos.html">아르고스</a></li>
+                </ul>
+                <ul>군단장 레이드
+                    <li><a href="./valtan.html">발탄</a></li>
+                    <li><a href="./vykas.html">비아키스</a></li>
+                    <li><a href="./koukusaton.html">쿠크세이튼</a></li>
+                    <li><a href="./abrelshud.html">아브렐슈드</a></li>
+                    <li><a href="./illiakan.html">일리아칸</a></li>
+                    <li><a href="./kamen.html">카멘</a></li>
+                </ul>
+                <ul>어비스 던전
+                    <li><a href="./lauriel.html">카양겔</a></li>
+                    <li><a href="./lazalam.html">상아탑</a></li>
+                </ul>
+                <ul>카제로스 레이드
+                    <li><a href="./echidna.html">에키드나</a></li>
+                    <li><a href="./behemoth.html">베히모스</a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- 게시판 목차 HTML 종료 -->
+        <!-- 게시판 글 작성 HTML 시작 -->
+        <div id="container">
+            <div id="writebox">
+                <div id="titletype">
+                    <div>게시판 글 수정</div>
+                    <!-- 글 작성하는 게시판 선택 시작 -->
+                    <select>
+                        <optgroup label="어비스 레이드">
+                            <option>아르고스</option>
+                        </optgroup>
+                        <optgroup label="군단장 레이드">
+                            <option>발탄</option>
+                            <option>비아키스</option>
+                            <option>쿠크세이튼</option>
+                            <option>아브렐슈드</option>
+                            <option>일리아칸</option>
+                            <option>카멘</option>
+                        </optgroup>
+                        <optgroup label="어비스 던전">
+                            <option>카양겔</option>
+                            <option>상아탑</option>
+                        </optgroup>
+                        <optgroup label="카제로스 레이드">
+                            <option>에키드나</option>
+                            <option>베히모스</option>
+                        </optgroup>
+                    </select>
+                    <!-- 글 작성하는 게시판 선택 종료 -->
+                </div>
+                <!-- 수정하려는 글의 제목 가져오기 기능 추가 -->
+                <input type="text" id="text_title" placeholder="제목을 입력해주세요.">
+                <!-- Quill Editor 삽입 시작 -->
+                <!-- 수정하려는 글의 내용 가져오기 기능 추가 -->
+                <div>
+                    <div id="editor">
+                    </div>
+                </div>
+                <!-- Quill Editor 삽입 종료 -->
+                <div id="buttonbox">
+                    <div>취소</div>
+                    <div>완료</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="./image/lostark.webp">
+        <div>Made by KKO</div>
+    </footer>
+    <script>
+        const quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+    </script>
+</body>
+
+</html>

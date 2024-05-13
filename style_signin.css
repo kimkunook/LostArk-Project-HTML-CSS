@@ -1,0 +1,55 @@
+main {
+    width : 100%;
+    min-height : 693px;
+    box-sizing : border-box;
+}
+#mainbox {
+    width : 376px;
+    display : flex;
+    flex-direction : column;
+    margin : 80px auto auto auto;
+}
+#mainbox > p {
+    font-size : 32px;
+    font-weight : bold;
+    letter-spacing : -0.5px;
+}
+#mainbox > div > p {
+    font-size : 24px;
+    font-weight : bold;
+    letter-spacing : -0.5px;
+}
+#idbox, #pwbox, #pwcbox {
+    display : flex;
+    flex-direction : column;
+    gap : 16px;
+}
+#idbox {
+    margin : 64px auto 24px auto;
+}
+#pwcbox {
+    margin : 24px auto 64px auto;
+}
+.textbox {
+    width : 376px;
+    height : 48px;
+    background-color : #F5F5F5;
+    border : 1px solid #000000;
+    border-radius : 8px;
+    padding : 16px;
+    box-sizing : border-box;
+}
+#signinbutton {
+    width : 376px;
+    height : 60px;
+    border-radius : 8px;
+    background-color : #FC6020;
+    color : #FFFFFF;
+    font-size : 18px;
+    font-weight : bold;
+    letter-spacing : -0.5px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    cursor : pointer;
+}

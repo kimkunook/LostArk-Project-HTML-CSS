@@ -1,0 +1,120 @@
+/* 게시판 목차 CSS 시작 */
+/* 게시판 종류에 따라 이미지, 크기, 위치만 교체 */
+main {
+    width : 1920px;
+    min-height : 900px;
+    display : flex;
+    flex-direction : row;
+}
+aside {
+    position : relative;
+    left : 0px;
+    background-image : url(./image/behemoth.jpg);
+    background-size : cover;
+    background-position-x : -620px;
+    width : 304px;
+    min-height : 900px;
+    max-height : 100%;
+    padding : 16px;
+    box-sizing : border-box;
+    font-weight : bold;
+    color : #FFFFFF;
+    text-shadow : -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black;
+    display : flex;
+    align-items : center;
+    flex-shrink: 0;
+}
+aside > div { margin-left : 48px;}
+aside ul {
+    font-size : 18px;
+    margin : 24px;
+}
+aside li {
+    margin : 16px;
+}
+aside a { color : white; text-decoration : none;}
+/* 게시판 목차 CSS 종료 */
+#container {
+    width : 1616px;
+    min-height : 900px;
+    background-color : #E0E7E9;
+    padding : 64px;
+    box-sizing : border-box;
+}
+#contentbox {
+    width : 1072px;
+    min-height : 754px;
+    border : 1px solid #6C7A89;
+    border-radius : 8px;
+    padding : 16px;
+    box-sizing : border-box;
+    gap : 16px;
+    display : flex;
+    flex-direction : column;
+}
+#topline {
+    width : 1040px;
+    display : flex;
+    justify-content : space-between;
+}
+#topline > :first-child {
+    font-size : 32px;
+    letter-spacing : -0.5px;
+    font-weight : bold;
+}
+#topline a {
+    color : #000000;
+    text-decoration : none;
+}
+#topline > :last-child {
+    display : flex;
+    gap : 16px;
+    justify-content : space-between;
+}
+#topline > div > div, #topline > div > a {
+    width : 96px;
+    height : 40px;
+    border : 1px solid #6C7A89;
+    border-radius : 4px;
+    letter-spacing : -0.5px;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+#title {
+    width : 1040px;
+    height : 48px;
+    padding : 9px 16px;
+    box-sizing : border-box;
+    border : 1px solid #6C7A89;
+    border-radius : 8px;
+    display : flex;
+    align-items : center;
+    font-size : 18px;
+    letter-spacing : -0.5px;
+    font-weight : bold;
+}
+#description {
+    width : 1040px;
+    border : 1px solid #6C7A89;
+    padding : 16px;
+    box-sizing : border-box;
+}
+#comment {
+    width : 1040px;
+    height : 46px;
+    background-color : #E0E7E9;
+    border : 1px solid #6C7A89;
+    border-radius : 8px;
+    padding : 9px 16px;
+    box-sizing : border-box;
+}
+#commentlist {
+    width : 1040px;
+    margin-top : 8px;
+    display : flex;
+    flex-direction : column;
+    gap : 16px;
+    padding : 0px 16px;
+    box-sizing : border-box;
+}
