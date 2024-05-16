@@ -35,6 +35,7 @@ main a {
     box-sizing : border-box;
     display : flex;
     flex-shrink: 0;
+    position : relative;
 }
 .name {
     color : #FFFFFF;
@@ -44,53 +45,70 @@ main a {
     text-shadow : -1px 0px #000000, 0px -1px #000000, 1px 0px #000000, 0px 1px #000000;
     align-self : flex-end;
 }
-#argos {
+.icon::after {
+    width : 192px;
+    height : 192px;
+    content : "";
+    opacity : 0.8;
+    position : absolute;
+    left : 0px;
+    top : 0px;
+    z-index : -1;
+    border-radius : 8px;
+}
+.icon:hover::after {
+    transform : scale(1.05);
+    transition-duration : 1s;
+    transition-timing-function : ease;
+    opacity : 1;
+}
+#argos::after {
     background-image : url(./image/argos.png);
     background-size : cover;
 }
-#valtan {
+#valtan::after {
     background-image : url(./image/valtan.png);
     background-size : cover;
 }
-#vykas {
+#vykas::after {
     background-image : url(./image/vykas.png);
     background-size : cover;
 }
-#koukusaton {
+#koukusaton::after {
     background-image : url(./image/koukusaton.png);
     background-size : cover;
 }
-#abrelshud {
+#abrelshud::after {
     background-image : url(./image/abrelshud.jpg);
     background-size : cover;
     background-position-x : -60px;
 }
-#illiakan {
+#illiakan::after {
     background-image : url(./image/illiakan.jpg);
     background-size : cover;
     background-position-x : -100px;
 }
-#kamen {
+#kamen::after {
     background-image : url(./image/kamen.jpg);
     background-size : cover;
     background-position-x : -80px;
 }
-#lauriel {
+#lauriel::after {
     background-image : url(./image/lauriel.jpg);
     background-size : cover;
     background-position-x : -70px;
 }
-#lazalam {
+#lazalam::after {
     background-image : url(./image/lazalam.jpg);
     background-size : cover;
     background-position-x : -40px;
 }
-#echidna {
+#echidna::after {
     background-image : url(./image/echidna.jpg);
     background-size : cover;
     background-position-x : -80px;
 }
-#behemoth {
+#behemoth::after {
     background-image : url(./image/behemoth.jpg);
     background-size : cover;
     background-position-x : -60px;
